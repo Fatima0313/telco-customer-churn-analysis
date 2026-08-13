@@ -1,0 +1,97 @@
+## Business Recommendations
+
+### 1. Focus on new customers during their first few months
+
+Churn is heavily concentrated among newer customers. The high-risk group had a **median tenure of only 4 months**, while the 0–12 month group had the highest churn rate.
+
+**Recommendation:** Create an early-customer retention program during the first 3–6 months, including onboarding follow-ups, satisfaction checks, and proactive issue resolution.
+
+
+### 2. Prioritize month-to-month customers
+
+Your analysis consistently showed that **month-to-month customers have much higher churn** than one-year and two-year customers. Also, **100% of your ML high-risk customers were month-to-month**.
+
+**Recommendation:** Offer suitable incentives for month-to-month customers to move to longer contracts, but don't blindly discount everyone. Test targeted offers and measure whether conversion actually reduces churn.
+
+
+
+### 3. Investigate the fiber-optic customer experience
+
+**94.7% of your high-risk customers use fiber optic**, and your earlier analysis showed particularly high churn among fiber-optic month-to-month customers.
+
+**Recommendation:** Investigate whether fiber customers are experiencing service quality, pricing, installation, or technical-support issues before assuming fiber itself causes churn.
+
+This distinction matters: **your data shows an association, not proof that fiber causes churn.**
+
+
+
+### 4. Strengthen support/security engagement for high-risk customers
+
+Among your high-risk customers:
+
+* **96.7% had no TechSupport**
+* **98.1% had no OnlineSecurity**
+* **83.7% had no OnlineBackup**
+
+**Recommendation:** Test targeted support/security offers for high-risk customers and monitor whether these interventions reduce churn.
+
+
+### 5. Use the ML model for proactive retention
+
+Your model achieved:
+
+* **Accuracy:** 80.6%
+* **ROC-AUC:** 84.2%
+* **High-risk group actual churn:** **71.8%**
+
+**Recommendation:** Use the model to generate a monthly list of high-risk customers so the retention team can contact them **before they leave**, rather than waiting until churn happens.
+
+
+
+### 6. Prioritize customers instead of treating everyone equally
+
+A practical workflow could be:
+
+```text
+New customer
+     ↓
+Monitor first 3–6 months
+     ↓
+Calculate churn probability
+     ↓
+High risk?
+   ↙       ↘
+ Yes        No
+ ↓           ↓
+Retention   Normal
+action      monitoring
+```
+
+This is much more efficient than giving the same retention campaign to all 7,043 customers.
+
+
+
+### 7. Test the recommendations instead of assuming they work
+
+This is the part that will make your project look more like **real analyst work**.
+
+For example:
+
+> Give a retention offer to a selected group of high-risk customers and compare their subsequent churn against a comparable group that did not receive the offer.
+
+Then the company can determine whether the intervention **actually reduces churn**.
+
+
+
+## Your final recommendation section can be this short
+
+> **Recommendations**
+>
+> 1. Implement an early-retention program for new customers, particularly during the first 3–6 months.
+> 2. Target month-to-month customers with retention strategies and incentives for longer-term contracts.
+> 3. Investigate service quality and pricing issues among fiber-optic customers, especially those on month-to-month contracts.
+> 4. Proactively engage high-risk customers with technical support and security-related services.
+> 5. Integrate the churn prediction model into the retention workflow to identify high-risk customers before they churn.
+> 6. Evaluate retention campaigns through controlled testing to measure whether interventions actually reduce churn.
+
+**One thing I would NOT put in your README:** "Customers churn because they don't have support." That's too strong for the analysis you've done. Say **"associated with higher churn risk"** instead.
