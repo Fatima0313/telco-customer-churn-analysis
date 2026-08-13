@@ -31,5 +31,3 @@ Churn Recall: 56%
 - Fiber-optic month-to-month customers were a particularly high-risk segment.
 - ML high-risk group had 71.8% actual churn.
 
-## Business Recommendations
-...
