@@ -40,6 +40,7 @@ WHERE TotalCharges IS NULL
   AND Tenure = 0;
 
    --QA analysis---
+-----EDA----
 
 SELECT DISTINCT Gender
 FROM [Telco-Customer-Churn_Analysis];
